@@ -1,0 +1,326 @@
+<!-- Header / Navigation -->
+<header>
+<nav>
+<div class="logo">PowerFit Gym</div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="burger"><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerFit Gym</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</nav>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="hero">
+<div class="hero-content">
+<h1>Get Fit. Stay Strong.</h1>
+<p>Join PowerFit Gym and transform your body and mind.</p>
+<a href="#services" class="btn">Explore Services</a>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+<h2>About Us</h2>
+<p>PowerFit Gym is committed to helping you achieve your fitness goals. With state-of-the-art equipment and certified trainers, we make fitness enjoyable and effective.</p>
+<img src="images/gym-about.jpg" alt="Gym Image">
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+<h2>Our Services</h2>
+<div class="services-container">
+<div class="service-card">
+<i class="fas fa-dumbbell fa-3x"></i>
+<h3>Weight Training</h3>
+<p>Customized strength training programs for all levels.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-running fa-3x"></i>
+<h3>Cardio Training</h3>
+<p>Boost your stamina and endurance with cardio workouts.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-spa fa-3x"></i>
+<h3>Yoga & Flexibility</h3>
+<p>Enhance flexibility and reduce stress with guided sessions.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-apple-alt fa-3x"></i>
+<h3>Nutrition Plans</h3>
+<p>Personalized diet plans to complement your fitness journey.</p>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>Address: 456 Fitness Avenue, GymCity, Country</p>
+<p>Phone: +1-987-654-3210</p>
+<p>Email: contact@powerfitgym.com</p>
+
+<form action="mailto:contact@powerfitgym.com" method="post" enctype="text/plain">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit" class="btn">Send Message</button>
+</form>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2026 PowerFit Gym | All Rights Reserved</p>
+</footer>
+
+<!-- JS for Burger Menu & Smooth Scroll -->
+<script src="script.js"></script>
+</body>
+</html>
+
+
+/* Google Font */
+body {
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+color: #333;
+}
+
+/* Header */
+header {
+background-color: #111;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 50px;
+}
+
+nav .logo {
+color: #ff5722;
+font-weight: 700;
+font-size: 24px;
+}
+
+nav .nav-links {
+list-style: none;
+display: flex;
+gap: 25px;
+}
+
+nav .nav-links li a {
+text-decoration: none;
+color: #fff;
+transition: 0.3s;
+}
+
+nav .nav-links li a:hover {
+color: #ff5722;
+}
+
+/* Hero Section */
+.hero {
+background: url('images/gym-hero.jpg') center/cover no-repeat;
+height: 90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #fff;
+}
+
+.hero-content h1 {
+font-size: 48px;
+margin-bottom: 20px;
+animation: fadeInDown 1s ease forwards;
+}
+
+.hero-content p {
+font-size: 20px;
+margin-bottom: 20px;
+}
+
+.btn {
+background-color: #ff5722;
+color: #fff;
+padding: 12px 30px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.btn:hover {
+background-color: #e64a19;
+}
+
+/* About Section */
+.about {
+padding: 60px 50px;
+text-align: center;
+}
+
+.about img {
+width: 80%;
+max-width: 600px;
+margin-top: 20px;
+border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+background-color: #f7f7f7;
+padding: 60px 50px;
+text-align: center;
+}
+
+.services-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+margin-top: 40px;
+}
+
+.service-card {
+background-color: #fff;
+padding: 30px;
+width: 250px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+transition: transform 0.3s;
+}
+
+.service-card:hover {
+transform: translateY(-10px);
+}
+
+.service-card i {
+color: #ff5722;
+margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact {
+padding: 60px 50px;
+text-align: center;
+}
+
+.contact input, .contact textarea {
+display: block;
+width: 80%;
+max-width: 500px;
+margin: 15px auto;
+padding: 12px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+.contact button {
+margin-top: 15px;
+}
+
+/* Footer */
+footer {
+background-color: #111;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+0% {opacity:0; transform: translateY(-20px);}
+100% {opacity:1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+nav .nav-links {
+display: none;
+flex-direction: column;
+background-color: #111;
+position: absolute;
+top: 60px;
+right: 50px;
+width: 200px;
+padding: 20px;
+}
+
+nav .nav-links.active {
+display: flex;
+}
+
+.burger {
+display: block;
+cursor: pointer;
+}
+
+.burger div {
+width: 25px;
+height: 3px;
+background-color: #fff;
+margin: 5px;
+}
+}
+
+
+
+// Burger menu toggle
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+nav.classList.toggle('active');
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+
+
+git init
+git add .
+git commit -m "Initial commit gym website"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/powerfit-gym.git
+git push -u origin main
+
+
+https://YOUR_USERNAME.github.io/powerfit-gym/
